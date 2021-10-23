@@ -1,3 +1,3 @@
 # Traveland
 
-# https://egor-vasilevskiy.github.io/Traveland/
+# https://egor-vasilevskiy.github.io/Calculator/
