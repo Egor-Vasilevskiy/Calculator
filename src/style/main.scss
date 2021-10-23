@@ -1,0 +1,10 @@
+//Config
+
+@import './config/reset';
+@import './config/varibles';
+@import './config/mixins';
+@import './config/baseLayout';
+
+//Component
+
+@import './components/_Calculator';

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style/main.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+
+  <title>Calculator</title>
+</head>
+
+<body> 
+  <div class="wrapper">
+    <div class="container">
+      <div class="calculator">
+        <div class="window">
+          <span class="input"></span>
+        </div>
+
+        <div class="btn">
+          <div class="btn__line">
+            <div class="item clear" onclick="clean()">AC</div>
+            <div class="item multiply" onclick="insert('*')">*</div>
+            <div class="item divide" onclick="insert('/')">/</div>
+            <div class="item delete" onclick="back()">&#9003;</div>
+          </div>
+
+          <div class="btn__line">
+            <div class="item" onclick="insert('7')">7</div>
+            <div class="item" onclick="insert('8')">8</div>
+            <div class="item" onclick="insert('9')">9</div>
+            <div class="item minus" onclick="insert('-')">-</div>
+          </div>
+
+          <div class="btn__line">
+            <div class="item" onclick="insert('4')">4</div>
+            <div class="item" onclick="insert('5')">5</div>
+            <div class="item" onclick="insert('6')">6</div>
+            <div class="item plus" onclick="insert('+')">+</div>
+          </div>
+
+          <div class="btn__line">
+            <div class="item" onclick="insert('1')">1</div>
+            <div class="item" onclick="insert('2')">2</div>
+            <div class="item" onclick="insert('3')">3</div>
+            <div class="item percent" onclick="insert('%')">%</div>
+          </div>
+          
+          <div class="btn__line">
+            <div class="item" onclick="insert('0')">0</div>
+            <div class="item" onclick="insert('.')">.</div>
+            <div class="item results" onclick="results()">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
