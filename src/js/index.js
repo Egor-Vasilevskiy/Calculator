@@ -1,7 +1,9 @@
 const input = document.querySelector('.input')
+const toogleButton = document.querySelector('.toogleButton')
+console.log(toogleButton)
 
 const insert = (num) => {
-    input.innerHTML = input.innerHTML + num   
+    input.innerHTML = input.innerHTML += num   
 }
 
 const clean = () => {
@@ -19,3 +21,27 @@ const results = () => {
         input.innerHTML = eval(exp);
     }
 }
+
+const persent = () => {
+    input.innerHTML = eval(input.innerHTML) / 100;
+}
+
+let setLightTheme = () => {
+    document.body.setAttribute("id", "light");
+    toogleButton.classList.add("active");
+    localStorage.setItem("theme", "light");
+}
+
+let setDarkTheme = () => {
+    document.body.removeAttribute("id");
+    toogleButton.classList.remove("active");
+    localStorage.setItem("theme", "dark");
+}
+
+toogleButton.addEventListener("click", () => {
+    if(document.body.getAttribute("id")) {
+        setDarkTheme()
+    } else {
+        setLightTheme()
+    }
+})

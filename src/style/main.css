@@ -370,25 +370,47 @@ textarea {
   padding: 0;
 }
 
+:root {
+  --bg-main: #1e1e1e;
+  --color-main: #fff;
+}
+
 body {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: var(--bg-main);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body#light {
+  --bg-main: #fff;
+  --color-main: #1e1e1e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.page {
+  background-color: var(--bg-main);
+  color: var(--color-main);
 }
 
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
   -webkit-filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.03)) drop-shadow(0px 24px 34px rgba(0, 0, 0, 0.09)) drop-shadow(0px 3px 34px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.03)) drop-shadow(0px 24px 34px rgba(0, 0, 0, 0.09)) drop-shadow(0px 3px 34px rgba(0, 0, 0, 0.15));
 }
