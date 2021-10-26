@@ -1,0 +1,19 @@
+@include sl {
+    .calculator {
+        height: 500px
+    }
+
+    .input {
+        height: 150px;
+    }
+}
+
+@include sm {
+    .calculator {
+        height: 600px
+    }
+
+    .input {
+        height: 150px;
+    }
+}

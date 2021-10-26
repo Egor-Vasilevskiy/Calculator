@@ -1,6 +1,5 @@
 const input = document.querySelector('.input')
 const toogleButton = document.querySelector('.toogleButton')
-console.log(toogleButton)
 
 const insert = (num) => {
     input.innerHTML = input.innerHTML += num   

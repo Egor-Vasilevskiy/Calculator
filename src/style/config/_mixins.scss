@@ -1,4 +1,10 @@
 // Small devices
+@mixin sl {
+    @media (max-width: #{$screen-sl-max}) {
+        @content;
+    }
+}
+
 @mixin sm {
     @media (max-width: #{$screen-sm-max}) {
         @content;
